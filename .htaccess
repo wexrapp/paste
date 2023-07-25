@@ -1,0 +1,7 @@
+RewriteEngine On
+
+# Rewrite rule for accessing individual paste
+RewriteRule ^([a-zA-Z0-9]{4})$ /paste.php?p=$1 [L]
+
+# Rewrite rule for accessing the home page
+RewriteRule ^$ /index.php [L]
